@@ -1,14 +1,14 @@
-# Desvendando Distribuições Linux - Imersão Dev com Google Gemini
+# Linux Distros BR
 
 ## O que essa aplicação faz?
 
-Imagine que você é um entusiasta de tecnologia ou está começando no mundo do Linux e quer saber tudo sobre sua distribuição Linux favorita. Esta aplicação é a sua nova melhor amiga! Ela te ajuda a encontrar todas as informações que você precisa sobre diferentes distribuições Linux de forma rápida e fácil.
+Linux Distros BR é uma página html contendo uma base de dados simples sobre distribuições do Linux em português do Brasil. Ela agrega informações úteis sobre as principais distribuições Linux numa linguagem acessível. O público alvo são iniciantes e entusiastas no mundo da tecnologia. Se você tem interesse em conhecer mais sobre o Linux e escolher uma distribuição para começar a utilizá-lo, esta página pode lhe ajudar.
 
 ## Como ela funciona?
 
-1. **Digite e pesquise**: Você digita o nome da distribuição Linux que quer encontrar na caixinha de pesquisa.
-2. **Mágica acontece**: A aplicação vasculha um banco de dados gigante (que está no arquivo `dados.js`) e procura por tudo que tenha a ver com o que você digitou.
-3. **Resultados na tela**: Se a aplicação encontrar algo, ela mostra um card com o nome da distribuição, uma breve descrição e um link para saber mais. Se não encontrar nada, ela te avisa que não teve sorte dessa vez.
+1. **Digite e pesquise**: Você digita o nome da distribuição Linux ou alguma palavra-chave de interesse na caixa de pesquisa.
+2. **Mágica acontece**: A aplicação vasculha um banco de dados (que está no arquivo `dados.js`) e procura por tudo que tenha a ver com o que você digitou.
+3. **Resultados na tela**: Se a aplicação encontrar algo, ela mostra um card com o nome da distribuição, informações relevantes e o link da página oficial. Se não encontrar nada, ela te avisa que não teve sorte dessa vez.
 
 ## Tecnologias usadas
 
@@ -20,7 +20,7 @@ Imagine que você é um entusiasta de tecnologia ou está começando no mundo do
 
 1. **Clone o repositório**: Faça um clone deste repositório no seu computador.
 2. **Abra o arquivo `index.html`**: Abra o arquivo `index.html` no seu navegador favorito.
-3. **Comece a pesquisar**: Digite o nome de uma distribuição Linux e veja a mágica acontecer!
+3. **Comece a pesquisar**: Digite o nome de uma distribuição Linux ou qualquer palavra-chave e veja a mágica acontecer!
 
 ## Quer contribuir?
 
@@ -34,6 +34,6 @@ Se você é um desenvolvedor ou entusiasta de Linux e quer ajudar a melhorar est
 
 ## Dúvidas?
 
-Se tiver alguma dúvida, pode abrir uma issue aqui no GitHub ou me mandar um email.
+Se tiver alguma dúvida, pode abrir uma issue aqui no GitHub.
 
-Vamos juntos criar a maior base de dados sobre distribuições Linux!
+Vamos juntos criar uma base de dados sobre distribuições Linux para o público brasileiro!
