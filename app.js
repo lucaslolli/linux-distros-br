@@ -14,25 +14,24 @@ function pesquisar() {
 
     // Inicializa uma string vazia para armazenar os resultados
     let resultados = "";
-    let titulo = ""; 
-    let descricao = "";
+    let atributos = ""; 
     
     // Itera sobre cada dado da lista de dados
     for (let dado of dados) {
-        titulo = dado.titulo.toLowerCase()
-        descricao = dado.descricao.toLowerCase()
-        // se titulo includes campoPesquisa
-        if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa)) {
-            // cria um novo elemento
-            resultados += `
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">${dado.titulo}</a>
-                </h2>
-                <p class="descricao-meta">${dado.descricao}</p>
-                <a href=${dado.link} target="_blank">Mais informações</a>
-            </div>
-        `;
+        for (let chave of Object.keys(dado)) {
+            // se atributo includes campoPesquisa
+            if (chave.includes(campoPesquisa)) {
+                // cria um novo elemento
+                resultados += `
+                <div class="item-resultado">
+                    <h2>
+                        <a href="#" target="_blank">${dado.titulo}</a>
+                    </h2>
+                    <p class="descricao-meta">${dado.descricao}</p>
+                    <a href=${dado.link} target="_blank">Mais informações</a>
+                </div>
+            `;
+            }
         }
     }
 
