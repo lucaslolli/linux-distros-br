@@ -3,106 +3,204 @@
 
 /* Estiliza o corpo da página */
 body {
-    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #DDDDDD; /* Cor de fundo da página */
-    display: flex; /* Usa Flexbox para layout */
-    flex-direction: column; /* Alinha os itens na vertical */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens verticalmente */
-    height: 100vh; /* Preenche a altura total da viewport */
+    font-family: "Chakra Petch", sans-serif;
+    /* Define a fonte padrão */
+    background-color: #121212;
+    /* Cor de fundo escura */
+    display: flex;
+    /* Usa Flexbox para o layout */
+    flex-direction: column;
+    /* Alinha os itens verticalmente */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    justify-content: flex-start;
+    /* Alinha o conteúdo mais para o topo */
+    height: 100vh;
+    /* Preenche a altura total da viewport */
     margin: 0;
+    /* Remove margens */
     padding: 0;
+    /* Remove padding */
+    background-size: cover;
+    /* Faz a imagem de fundo cobrir toda a tela */
+    background-position: center;
+    /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat;
+    /* Não repete a imagem de fundo */
+    transition: background-image 2s ease-in-out;
+    /* Transição suave entre imagens */
+    background-image: url(imagens/imagem\ \(1\).jpg);
+    /* Define a imagem de fundo inicial */
+    color: #FFFFFF;
+    /* Cor do texto padrão para tema escuro */
+}
+
+/* Container central para manter o conteúdo na parte central da página */
+.container {
+    width: 80%;
+    /* Define a largura do container em 80% da página */
+    max-width: 1200px;
+    /* Define a largura máxima do container */
+    margin: 0 auto;
+    /* Centraliza o container horizontalmente */
+    padding: 3rem 2rem;
+    /* Define o padding (espaçamento interno) */
+    background-color: rgba(33, 33, 33, 0.9);
+    /* Fundo preto com transparência de 90% */
+    border-radius: 10px;
+    /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    /* Adiciona uma sombra escura */
 }
 
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 2.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    font-size: 2.5rem;
+    /* Define o tamanho da fonte */
+    color: #FFFFFF;
+    /* Cor branca para destaque no tema escuro */
+    text-align: center;
+    /* Centraliza o texto */
+    letter-spacing: 0.4rem;
+    /* Espaçamento entre as letras */
+    margin-top: 2rem;
+    /* Adiciona margem superior ao título */
 }
 
 /* Estiliza as seções da página */
 section {
-    display: flex; /* Usa Flexbox para layout */
-    flex-direction: column; /* Alinha os itens na vertical */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+    display: flex;
+    /* Usa Flexbox para layout */
+    flex-direction: column;
+    /* Alinha os itens na vertical */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem;
+    /* Espaçamento inferior das seções */
 }
 
 /* Estiliza os inputs dentro das seções */
 section input {
-    width: 30rem; /* Largura dos inputs */
-    border: none; /* Remove a borda padrão */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 1.5rem; /* Borda arredondada */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
-    color: #45474B; /* Cor do texto */
-    font-size: 1rem; /* Tamanho da fonte */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
+    width: 30rem;
+    /* Define a largura dos inputs */
+    border: none;
+    /* Remove borda padrão */
+    padding: 1rem;
+    /* Define o espaçamento interno */
+    border-radius: 1.5rem;
+    /* Define bordas arredondadas */
+    margin-bottom: 1rem;
+    /* Espaçamento inferior entre os inputs */
+    color: #FFFFFF;
+    /* Cor do texto dentro dos inputs */
+    background-color: #333333;
+    /* Cor de fundo mais escura para os inputs */
+    font-size: 1rem;
+    /* Tamanho da fonte dos inputs */
+    box-sizing: border-box;
+    /* Garante que padding e borda são incluídos no tamanho total */
 }
 
 /* Estiliza os botões dentro das seções */
 section button {
-    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #30475E; /* Cor de fundo do botão */
-    color: #F5F7F8; /* Cor do texto do botão */
-    font-size: 1rem; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    padding: 0.8rem 1.2rem;
+    /* Define o espaçamento interno dos botões */
+    border: none;
+    /* Remove borda padrão dos botões */
+    border-radius: 1.5rem;
+    /* Define bordas arredondadas */
+    background-color: #30475E;
+    /* Cor de fundo dos botões */
+    color: #FFFFFF;
+    /* Cor do texto dos botões */
+    font-size: 1rem;
+    /* Define o tamanho da fonte nos botões */
+    cursor: pointer;
+    /* Muda o cursor ao passar o mouse sobre os botões */
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
-    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 0.6rem; /* Borda arredondada */
+    width: 60rem;
+    /* Define a largura máxima da caixa de resultados */
+    height: 46vh;
+    /* Define a altura máxima da caixa de resultados */
+    overflow-y: auto;
+    /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem;
+    /* Espaçamento superior da caixa de resultados */
+    margin: 0 auto;
+    /* Centraliza horizontalmente a caixa de resultados */
+    padding: 1rem;
+    /* Espaçamento interno da caixa de resultados */
+    border-radius: 0.6rem;
+    /* Borda arredondada */
+    background-color: rgba(33, 33, 33, 0.9);
+    /* Fundo escuro com opacidade */
+    position: relative;
+    /* Garante que o footer não sobreponha esta seção */
+    z-index: 1;
+    /* Mantém a seção à frente do footer */
 }
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: #FFFFFF; /* Cor de fundo dos itens */
-    border-radius: 0.6rem; /* Borda arredondada */
-    padding: 1rem; /* Espaçamento interno */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    background: #333333;
+    /* Fundo escuro dos itens de resultado */
+    border-radius: 0.6rem;
+    /* Borda arredondada dos itens */
+    padding: 1rem;
+    /* Espaçamento interno */
+    margin-bottom: 1rem;
+    /* Espaçamento inferior entre os itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    /* Sombra mais escura para os itens */
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    font-size: 1.5rem;
+    /* Define o tamanho da fonte */
+    color: #FFFFFF;
+    /* Cor branca para os títulos dos itens */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: #30475E; /* Cor do texto dos links */
+    text-decoration: none;
+    /* Remove o sublinhado padrão dos links */
+    color: #76c7c0;
+    /* Cor dos links no tema escuro */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #45474B; /* Cor do texto */
-    margin: 0.5rem 0; /* Margem acima e abaixo */
+    color: #AAAAAA;
+    /* Cor cinza claro para as descrições */
+    margin: 0.5rem 0;
+    /* Margem superior e inferior */
 }
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8; /* Cor de fundo do rodapé */
-    color: #45474B; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 0; /* Espaçamento interno */
-    width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
-    bottom: 0; /* Alinha ao fundo da página */
-    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #1C1C1C;
+    /* Fundo mais escuro para o rodapé */
+    color: #AAAAAA;
+    /* Cor do texto no rodapé */
+    text-align: center;
+    /* Centraliza o texto no rodapé */
+    padding: 1rem;
+    /* Define o espaçamento interno */
+    width: 100%;
+    /* Largura total do rodapé */
+    position: relative;
+    /* Torna o footer relativo ao conteúdo da página */
+    font-size: 1rem;
+    /* Define o tamanho da fonte no rodapé */
 }
