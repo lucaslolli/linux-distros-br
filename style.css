@@ -12,6 +12,12 @@ body {
     height: 100vh; /* Preenche a altura total da viewport */
     margin: 0;
     padding: 0;
+    /* Define o fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 2s ease-in-out; /* Transição suave
+    /* background-image: url(imagens/imagem\ \(1\).jpg); */
 }
 
 /* Estiliza os títulos h1 */
