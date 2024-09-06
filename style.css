@@ -16,6 +16,7 @@ body {
     background-position: center; /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Não repete a imagem de fundo */
     transition: background-image 2s ease-in-out; /* Transição suave entre imagens */
+    background-image: url(imagens/imagem\ \(14\).jpg);
 }
 
 /* Estiliza o container do texto principal */
