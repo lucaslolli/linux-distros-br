@@ -4,7 +4,8 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #DDDDDD; /* Cor de fundo da página */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
+    background-color: #151718; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -25,7 +26,7 @@ body {
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 5rem; /* Tamanho da fonte */
-    color: #B2B8B1; /* Cor do texto */
+    color:burlywood; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.3rem; /* Espaçamento entre letras */
     /* margin: 10rem 0 2rem 0;  */
@@ -42,22 +43,17 @@ h1 {
     /* Define a largura do container */
     /* max-width: 800px;  */
     /* Define a largura máxima do container */
-    margin: 0 auto;
-    /* Centraliza o container horizontalmente */
-    padding: 1.5rem;
-    /* Define o padding (espaçamento interno) */
-    background-color: rgba(33, 33, 33, 0.9);
-    /* Fundo preto com transparência de 90% */
-    border-radius: 10px;
-    /* Borda arredondada */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    /* Adiciona uma sombra escura */
-    color: #C5C7C8;
-    /* Cor do texto ajustada para contraste */
+    margin: -3rem 0 auto; /* Centraliza o container horizontalmente */
+    padding: 1.2rem; /* Define o padding (espaçamento interno) */
+    background-color: rgba(33, 33, 33, 0.9); /* Fundo preto com transparência de 90% */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
+    color: #C5C7C8; /* Cor do texto ajustada para contraste */
 }
 
 /* Estiliza as seções da página */
 section {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -66,6 +62,7 @@ section {
 
 /* Estiliza os inputs dentro das seções */
 section input {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
     width: 30rem; /* Largura dos inputs */
     border: none; /* Remove a borda padrão */
     padding: 1.1rem; /* Espaçamento interno */
@@ -75,18 +72,21 @@ section input {
     font-size: 1rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
     background-color: #222831;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
 }
 
 /* Estiliza os botões dentro das seções */
 section button {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #30475E; /* Cor de fundo do botão */
+    background-color: #151741; /* Cor de fundo do botão */
     color: #BBB; /* Cor do texto do botão */
     font-size: 1.1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
     margin-top: 0; /* Remove a margem superior do botão se necessário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -110,7 +110,7 @@ section button {
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.5rem; /* Tamanho da fonte */
+    font-size: 1.9rem; /* Tamanho da fonte */
     color: darkred; /* Cor do texto */
 }
 
