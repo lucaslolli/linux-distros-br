@@ -15,7 +15,8 @@ body {
     /* Preenche a altura total da viewport */
     margin: 0;
     padding: 0;
-    background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
+    background-size:cover; 
+    /* Faz a imagem de fundo cobrir toda a tela */
     /* background-position: center;  */
     /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Não repete a imagem de fundo */
@@ -92,7 +93,7 @@ section button {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 110vh; /* Altura máxima da caixa de resultados */
+    height: 120vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
