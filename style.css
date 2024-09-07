@@ -34,13 +34,13 @@ body {
     background-color: rgba(33, 33, 33, 0.9); /* Fundo preto com transparência de 90% */
     border-radius: 10px; /* Borda arredondada */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
-    color: #F5F7F8; /* Cor do texto ajustada para contraste */
+    color: #C5C7C8; /* Cor do texto ajustada para contraste */
 }
 
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    color: #B2B8B1; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.3rem; /* Espaçamento entre letras */
     /* margin: 10rem 0 2rem 0;  */
@@ -62,9 +62,10 @@ section input {
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 0; /* Remove o espaço abaixo dos inputs */
-    color: #45474B; /* Cor do texto */
+    color: #95979B; /* Cor do texto */
     font-size: 1rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
+    background-color: #222831;
 }
 
 /* Estiliza os botões dentro das seções */
@@ -91,7 +92,7 @@ section button {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: #FFFFFF; /* Cor de fundo dos itens */
+    background-color: rgba(33, 33, 33, 0.9); /* Fundo preto com transparência de 90% */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
@@ -101,7 +102,7 @@ section button {
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    color: red; /* Cor do texto */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
@@ -117,14 +118,14 @@ section button {
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #45474B; /* Cor do texto */
+    color: #AAAAAA; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
 }
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8; /* Cor de fundo do rodapé */
-    color: #45474B; /* Cor do texto */
+    background-color: #151718; /* Cor de fundo do rodapé */
+    color: #65676B; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 1rem; /* Adiciona padding para espaçamento interno */
     width: 100%; /* Largura total da página */
