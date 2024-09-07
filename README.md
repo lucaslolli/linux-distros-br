@@ -2,9 +2,9 @@
 
 Este projeto foi criado como parte da Imersão Dev com Gemini da Alura
 
-## O que essa aplicação faz?
+## O que esta aplicação faz?
 
-Linux Distros BR é uma página html contendo uma base de dados simples sobre distribuições do Linux em português do Brasil. Ela agrega informações úteis sobre as principais distribuições Linux numa linguagem acessível. O público alvo são iniciantes e entusiastas no mundo da tecnologia. Se você tem interesse em conhecer mais sobre o Linux e escolher uma distribuição para começar a utilizá-lo, esta página pode lhe ajudar.
+Linux Distros BR é uma base de dados em html sobre distribuições do Linux em português do Brasil.
 
 ## Como ela funciona?
 
