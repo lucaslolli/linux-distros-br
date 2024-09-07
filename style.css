@@ -20,7 +20,7 @@ body {
     /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Não repete a imagem de fundo */
     transition: background-image 2s ease-in-out; /* Transição suave entre imagens */
-    background-image: url(imagens/imagem\ \(2\).jpg);
+    background-image: url(imagem.jpg);
 }
 
 /* Estiliza os títulos h1 */
@@ -35,7 +35,7 @@ h1 {
 
 /* Estiliza o container do texto principal */
 .texto-principal {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     /* Tamanho da fonte */
     text-align: center;
     /* Alinha o texto ao centro */
