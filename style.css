@@ -24,10 +24,13 @@ body {
 
 /* Estiliza o container do texto principal */
 .texto-principal {
-    width: 80%; /* Define a largura do container */
-    max-width: 800px; /* Define a largura máxima do container */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    width: 75%; /* Define a largura do container */
+    /* max-width: 800px;  */
+    /* Define a largura máxima do container */
     margin: 0 auto; /* Centraliza o container horizontalmente */
-    padding: 2rem; /* Define o padding (espaçamento interno) */
+    padding: 1.5rem; /* Define o padding (espaçamento interno) */
     background-color: rgba(33, 33, 33, 0.9); /* Fundo preto com transparência de 90% */
     border-radius: 10px; /* Borda arredondada */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
