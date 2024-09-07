@@ -13,10 +13,11 @@ body {
     margin: 0;
     padding: 0;
     background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem de fundo */
+    /* background-position: center;  */
+    /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Não repete a imagem de fundo */
     transition: background-image 2s ease-in-out; /* Transição suave entre imagens */
-    background-image: url(imagens/imagem\ \(14\).jpg);
+    background-image: url(imagens/imagem\ \(2\).jpg);
 }
 
 /* Estiliza o container do texto principal */
