@@ -22,11 +22,9 @@ function pesquisar() {
             // Cria um novo elemento
             resultados += `
             <div class="item-resultado">
-                <h2>
-                    ${dado.titulo}
-                </h2>
+                <h2>${dado.titulo}</h2>
                 <p class="descricao-meta">${dado.descricao}</p>
-                <a href="${dado.link}" target="_blank">Mais informações</a>
+                <a href="${dado.link}" target="_blank">Site oficial</a>
             </div>
         `;
         }

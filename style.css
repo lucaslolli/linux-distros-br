@@ -22,21 +22,6 @@ body {
     background-image: url(imagens/imagem\ \(2\).jpg);
 }
 
-/* Estiliza o container do texto principal */
-.texto-principal {
-    font-size: 1.1rem; /* Tamanho da fonte */
-    text-align: center; /* Alinha o texto ao centro */
-    width: 75%; /* Define a largura do container */
-    /* max-width: 800px;  */
-    /* Define a largura máxima do container */
-    margin: 0 auto; /* Centraliza o container horizontalmente */
-    padding: 1.5rem; /* Define o padding (espaçamento interno) */
-    background-color: rgba(33, 33, 33, 0.9); /* Fundo preto com transparência de 90% */
-    border-radius: 10px; /* Borda arredondada */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
-    color: #C5C7C8; /* Cor do texto ajustada para contraste */
-}
-
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 5rem; /* Tamanho da fonte */
@@ -45,6 +30,30 @@ h1 {
     letter-spacing: 0.3rem; /* Espaçamento entre letras */
     /* margin: 10rem 0 2rem 0;  */
     /* Aumenta a margem superior para posicionar o título mais para baixo */
+}
+
+/* Estiliza o container do texto principal */
+.texto-principal {
+    font-size: 1.25rem;
+    /* Tamanho da fonte */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    /* width: 75%; */
+    /* Define a largura do container */
+    /* max-width: 800px;  */
+    /* Define a largura máxima do container */
+    margin: 0 auto;
+    /* Centraliza o container horizontalmente */
+    padding: 1.5rem;
+    /* Define o padding (espaçamento interno) */
+    background-color: rgba(33, 33, 33, 0.9);
+    /* Fundo preto com transparência de 90% */
+    border-radius: 10px;
+    /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    /* Adiciona uma sombra escura */
+    color: #C5C7C8;
+    /* Cor do texto ajustada para contraste */
 }
 
 /* Estiliza as seções da página */
@@ -59,7 +68,7 @@ section {
 section input {
     width: 30rem; /* Largura dos inputs */
     border: none; /* Remove a borda padrão */
-    padding: 1rem; /* Espaçamento interno */
+    padding: 1.1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 0; /* Remove o espaço abaixo dos inputs */
     color: #95979B; /* Cor do texto */
@@ -74,8 +83,8 @@ section button {
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
     background-color: #30475E; /* Cor de fundo do botão */
-    color: #F5F7F8; /* Cor do texto do botão */
-    font-size: 1rem; /* Tamanho da fonte */
+    color: #BBB; /* Cor do texto do botão */
+    font-size: 1.1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
     margin-top: 0; /* Remove a margem superior do botão se necessário */
 }
@@ -94,7 +103,7 @@ section button {
 .item-resultado {
     background-color: rgba(33, 33, 33, 0.9); /* Fundo preto com transparência de 90% */
     border-radius: 0.6rem; /* Borda arredondada */
-    padding: 1rem; /* Espaçamento interno */
+    padding: 2rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
@@ -107,8 +116,9 @@ section button {
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
+    font-size: large;
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: #30475E; /* Cor do texto dos links */
+    color: lightskyblue; /* Cor do texto dos links */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
@@ -118,8 +128,9 @@ section button {
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #AAAAAA; /* Cor do texto */
-    margin: 0.5rem 0; /* Margem acima e abaixo */
+    font-size: larger;
+    color: #BBBBBB; /* Cor do texto */
+    margin: 0 1; /* Margem acima e abaixo */
 }
 
 /* Estiliza o rodapé da página */
