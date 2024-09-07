@@ -5,7 +5,7 @@ function pesquisar() {
     let campoPesquisa = document.getElementById("campo-pesquisa").value.trim().toLowerCase();
 
     // Mensagem padrão caso não haja resultados
-    const mensagemVazia = "<p>Nada foi encontrado</p>";
+    const mensagemVazia = "<p class='mensagem-vazia'>Nada foi encontrado</p>";
 
     // Se o campo de pesquisa estiver vazio
     if (!campoPesquisa) {
@@ -16,7 +16,7 @@ function pesquisar() {
     // Filtra os dados com base na pesquisa
     const resultados = dados.filter(dado => 
         Object.values(dado).some(value => 
-            typeof value === 'string' && value.toLowerCase().includes(campoPesquisa)
+            typeof value === "string" && value.toLowerCase().includes(campoPesquisa)
         )
     );
 

@@ -30,7 +30,7 @@ h1 {
     color:burlywood; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.3rem; /* Espaçamento entre letras */
-    /* margin: 10rem 0 2rem 0;  */
+    margin: 3rem 0 1rem; 
     /* Aumenta a margem superior para posicionar o título mais para baixo */
 }
 
@@ -44,7 +44,7 @@ h1 {
     /* Define a largura do container */
     /* max-width: 800px;  */
     /* Define a largura máxima do container */
-    margin: -3rem 0 auto; /* Centraliza o container horizontalmente */
+    margin: 0 0 auto; /* Centraliza o container horizontalmente */
     padding: 1.2rem; /* Define o padding (espaçamento interno) */
     background-color: rgba(33, 33, 33, 0.9); /* Fundo preto com transparência de 90% */
     border-radius: 10px; /* Borda arredondada */
@@ -132,6 +132,14 @@ section button {
     font-size: larger;
     color: #BBBBBB; /* Cor do texto */
     margin: 0 1; /* Margem acima e abaixo */
+}
+
+.mensagem-vazia {
+    font-family: Arial, sans-serif; /* Fonte */
+    font-size: 28px; /* Tamanho da fonte */
+    color: #aa0000; /* Cor do texto (vermelho, por exemplo) */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
+    text-align: center; /* Opcional: centraliza o texto */
 }
 
 /* Estiliza o rodapé da página */
