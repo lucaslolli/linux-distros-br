@@ -8,7 +8,8 @@ body {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens verticalmente */
+    /* justify-content: center;  */
+    /* Centraliza os itens verticalmente */
     height: 200vh; 
     /* Preenche a altura total da viewport */
     margin: 0;
@@ -35,11 +36,12 @@ body {
 
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 2.5rem; /* Tamanho da fonte */
+    font-size: 5rem; /* Tamanho da fonte */
     color: #222831; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.4rem; /* Espaçamento entre letras */
-    margin: 10rem 0 2rem 0; /* Aumenta a margem superior para posicionar o título mais para baixo */
+    letter-spacing: 0.3rem; /* Espaçamento entre letras */
+    /* margin: 10rem 0 2rem 0;  */
+    /* Aumenta a margem superior para posicionar o título mais para baixo */
 }
 
 /* Estiliza as seções da página */
