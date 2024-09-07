@@ -5,7 +5,7 @@ function pesquisar() {
     let campoPesquisa = document.getElementById("campo-pesquisa").value.trim().toLowerCase();
 
     // Mensagem padrão caso não haja resultados
-    const mensagemVazia = "<p class='mensagem-vazia'>Nada foi encontrado</p>";
+    const mensagemVazia = "<p class='texto-principal'>Nada foi encontrado</p>";
 
     // Se o campo de pesquisa estiver vazio
     if (!campoPesquisa) {
