@@ -36,7 +36,7 @@ function pesquisar() {
 
             <!-- Link "Site oficial" que vai ter estilo de botão -->
             <div>
-            <button href="${dado.link}" target="_blank">Site oficial</button>
+            <button class="botao-site-oficial" href="${dado.link}" target="_blank">Site oficial</button>
             </div>
         </div>
     `).join('');
