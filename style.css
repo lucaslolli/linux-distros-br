@@ -166,7 +166,24 @@ section button {
 }
 
 .botao-site-oficial {
-    margin-top: 20px;
+    display: inline-block; /* Ajusta a largura do botão ao texto */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #151741; /* Cor de fundo do botão */
+    color: #BBB; /* Cor do texto do botão */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-top: 20px; /* Margem superior do botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
+    width: auto; /* Garante que a largura se ajuste ao conteúdo */
+    white-space: nowrap; /* Impede a quebra de linha do texto */
+}
+
+.botao-container {
+    display: inline-block;
+    /* Permite que o contêiner ajuste seu tamanho ao conteúdo */
 }
 
 .mensagem-vazia {

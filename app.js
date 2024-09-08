@@ -77,8 +77,8 @@ function pesquisar() {
                 <button class="link-estilizado" id="botao-expandir-${index}" onclick="expandirResultado(${index})">Mostrar mais</button>
 
                 <!-- Link "Site oficial" que vai ter estilo de botão -->
-                <div>
-                    <button class="botao-site-oficial" href="${dado.link}" target="_blank">Site oficial</button>
+                <div class="botao-container">
+                    <a class="botao-site-oficial" href="${dado.link}" target="_blank">Site oficial</a>
                 </div>
             </div>
         `;
