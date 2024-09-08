@@ -14,8 +14,8 @@ function pesquisar() {
     }
 
     // Filtra os dados com base na pesquisa
-    const resultados = dados.filter(dado => 
-        Object.values(dado).some(value => 
+    const resultados = dados.filter(dado =>
+        Object.values(dado).some(value =>
             typeof value === "string" && value.toLowerCase().includes(campoPesquisa)
         )
     );
@@ -27,11 +27,28 @@ function pesquisar() {
     }
 
     // Gera o HTML dos resultados
-    section.innerHTML = resultados.map(dado => `
-        <div class="item-resultado">
+    section.innerHTML = resultados.map((dado, index) => `
+        <div class="item-resultado" id="resultado-${index}">
             <h2>${dado.titulo}</h2>
             <p class="descricao-meta">${dado.descricao}</p>
+            <button class="botao-expandir" onclick="expandirResultado(${index})">Mostrar mais</button>
+            <div class="detalhes" id="detalhes-${index}" style="display: none;">
+                ${Object.entries(dado)
+            .filter(([key, value]) => key !== 'titulo' && key !== 'descricao' && key !== 'link')
+            .map(([key, value]) => `<p><strong>${key}:</strong> ${value}</p>`)
+            .join('')}
+            </div>
             <a href="${dado.link}" target="_blank">Site oficial</a>
         </div>
     `).join('');
+}
+
+// Função para expandir o resultado
+function expandirResultado(index) {
+    const detalhes = document.getElementById(`detalhes-${index}`);
+    if (detalhes.style.display === 'none') {
+        detalhes.style.display = 'block';
+    } else {
+        detalhes.style.display = 'none';
+    }
 }
