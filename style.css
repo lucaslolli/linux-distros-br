@@ -111,7 +111,8 @@ section button {
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.9rem; /* Tamanho da fonte */
+    text-align: center, center, center;
+    font-size: 2.5rem; /* Tamanho da fonte */
     color: darkred; /* Cor do texto */
 }
 
@@ -133,7 +134,7 @@ section button {
 .descricao-meta {
     font-size: larger;
     color: #BBBBBB; /* Cor do texto */
-    margin: 0 1; /* Margem acima e abaixo */
+    margin: 0 0 0.5rem; /* Margem acima e abaixo */
 }
 
 .resultado-header {
@@ -142,9 +143,8 @@ section button {
 }
 
 .logo {
-    width: 50px;
-    /* Ajuste o tamanho conforme necessário */
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin-right: 15px;
 }
 
