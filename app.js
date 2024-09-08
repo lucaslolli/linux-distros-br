@@ -61,7 +61,12 @@ function pesquisar() {
 
         return `
             <div class="item-resultado" id="resultado-${index}">
-                <h2>${dado.titulo}</h2>
+                <div class="resultado-header">
+                    <!-- Imagem da logo à esquerda -->
+                    <img src="${dado.imagem}" alt="${dado.titulo} logo" class="logo" />
+                    <!-- Título à direita da logo -->
+                    <h2>${dado.titulo}</h2>
+                </div>
                 <p class="descricao-meta">${dado.descricao}</p>
                 
                 <div class="detalhes" id="detalhes-${index}" style="display: none;">
@@ -73,7 +78,7 @@ function pesquisar() {
 
                 <!-- Link "Site oficial" que vai ter estilo de botão -->
                 <div>
-                    <button class="botao-site-oficial" href="${dado.link}" target="_blank">Site oficial</button>
+                    <a class="botao-site-oficial" href="${dado.link}" target="_blank">Site oficial</a>
                 </div>
             </div>
         `;
