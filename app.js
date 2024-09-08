@@ -4,11 +4,11 @@ const descricoes = {
     descricao: "Descrição",
     link: "Link",
     imagem: "Imagem",
-    dataLancamento: "Data de lançamento",
+    dataLancamento: "Data de Lançamento",
     requisitos: "Requisitos",
     foco: "Foco",
-    gerenciadorPacotes: "Gerenciador de pacotes",
-    ambienteDesktopPadrao: "Ambiente desktop padrão",
+    gerenciadorPacotes: "Gerenciador de Pacotes",
+    ambienteDesktopPadrao: "Ambiente Desktop Padrão",
     caracteristicas: "Características",
     pros: "Prós",
     contras: "Contras"
@@ -54,7 +54,7 @@ function pesquisar() {
     section.innerHTML = resultados.map((dado, index) => {
         const dadosTransformados = transformarObjetoEmArray(dado);
         const detalhes = dadosTransformados
-            .filter(([chave, valor]) => chave !== 'Título' && chave !== 'Descrição' && chave !== 'Link' && chave !== 'Imagem')
+            .filter(([chave, valor]) => chave !== 'Título' && chave !== 'Descrição' && chave !== 'Link')
             .map(([chave, valor]) => `<p><strong>${chave}:</strong> ${valor}</p>`)
             .join('');
 
@@ -72,7 +72,7 @@ function pesquisar() {
                 
                 <!-- Link "Site oficial" que vai ter estilo de botão -->
                 <div>
-                    <button class="botao-site-oficial" href="${dado.link}" target="_blank">Site oficial</button>
+                    <a class="botao-site-oficial" href="${dado.link}" target="_blank">Site oficial</a>
                 </div>
             </div>
         `;
@@ -82,9 +82,13 @@ function pesquisar() {
 // Função para expandir o resultado
 function expandirResultado(index) {
     const detalhes = document.getElementById(`detalhes-${index}`);
+    const botaoExpandir = document.getElementById(`botao-expandir-${index}`);
+
     if (detalhes.style.display === 'none') {
         detalhes.style.display = 'block';
+        botaoExpandir.textContent = 'Mostrar menos';
     } else {
         detalhes.style.display = 'none';
+        botaoExpandir.textContent = 'Mostrar mais';
     }
 }
