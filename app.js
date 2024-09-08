@@ -63,16 +63,16 @@ function pesquisar() {
                 <h2>${dado.titulo}</h2>
                 <p class="descricao-meta">${dado.descricao}</p>
                 
-                <!-- Botão "Mostrar mais" que vai ter estilo de link -->
-                <button class="link-estilizado" id="botao-expandir-${index}" onclick="expandirResultado(${index})">Mostrar mais</button>
-
                 <div class="detalhes" id="detalhes-${index}" style="display: none;">
                     ${detalhes}
                 </div>
                 
+                <!-- Botão "Mostrar mais" que vai ter estilo de link -->
+                <button class="link-estilizado" id="botao-expandir-${index}" onclick="expandirResultado(${index})">Mostrar mais</button>
+
                 <!-- Link "Site oficial" que vai ter estilo de botão -->
                 <div>
-                    <a class="botao-site-oficial" href="${dado.link}" target="_blank">Site oficial</a>
+                    <button class="botao-site-oficial" href="${dado.link}" target="_blank">Site oficial</button>
                 </div>
             </div>
         `;
