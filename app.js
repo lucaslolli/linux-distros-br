@@ -74,7 +74,9 @@ function pesquisar() {
                 </div>
                 
                 <!-- Botão "Mostrar mais" que vai ter estilo de link -->
+                <div>
                 <button class="link-estilizado" id="botao-expandir-${index}" onclick="expandirResultado(${index})">Mostrar mais</button>
+                </div>
 
                 <!-- Link "Site oficial" que vai ter estilo de botão -->
                 <div class="botao-container">
