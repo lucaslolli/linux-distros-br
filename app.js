@@ -24,9 +24,6 @@ function pesquisar() {
             <h2>${dado.titulo}</h2>
             <p class="descricao-meta">${dado.descricao}</p>
             
-            <!-- Link "Site oficial" que vai ter estilo de botão -->
-            <a href="${dado.link}" target="_blank" class="botao-expandir-estilizado">Site oficial</a>
-            
             <!-- Botão "Mostrar mais" que vai ter estilo de link -->
             <button class="link-estilizado" id="botao-expandir-${index}" onclick="expandirResultado(${index})">Mostrar mais</button>
 
@@ -36,6 +33,9 @@ function pesquisar() {
             .map(([key, value]) => `<p><strong>${key}:</strong> ${value}</p>`)
             .join('')}
             </div>
+
+            <!-- Link "Site oficial" que vai ter estilo de botão -->
+            <a href="${dado.link}" target="_blank" class="botao-expandir-estilizado">Site oficial</a>
         </div>
     `).join('');
 }

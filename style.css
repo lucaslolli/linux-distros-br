@@ -115,12 +115,30 @@ section button {
     color: darkred; /* Cor do texto */
 }
 
-.botao-expandir {
-    margin-top: 0px;
+/* Estilo para o botão expandir que agora será como um link */
+.link-estilizado {
+    background: none;
+    border: none;
+    color:lightblue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
 }
 
-.detalhes {
-    margin-top: 10px;
+/* Estilo para o link "Site oficial" que agora será como um botão */
+.botao-expandir-estilizado {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color:#151741;
+    color: #bbb;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 114px;
+    font-size: 16px;
+    cursor: pointer;
+    width: auto;
 }
 
 /* Estiliza os links dentro dos itens de resultado */
@@ -130,7 +148,6 @@ section button {
     margin-left: 20px;
     font-size: large;
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: lightskyblue; /* Cor do texto dos links */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
