@@ -105,7 +105,7 @@ section button {
     background-color: rgba(33, 33, 33, 0.9); /* Fundo preto com transparência de 90% */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 2rem; /* Espaçamento interno */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    margin-bottom: 20px; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
@@ -115,11 +115,39 @@ section button {
     color: darkred; /* Cor do texto */
 }
 
+/* Estilo para o botão expandir que agora será como um link */
+.link-estilizado {
+    background: none;
+    border: none;
+    color:lightblue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+}
+
+/* Estilo para o link "Site oficial" que agora será como um botão */
+.botao-expandir-estilizado {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color:#151741;
+    color: #bbb;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 114px;
+    font-size: 16px;
+    cursor: pointer;
+    width: auto;
+}
+
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
+    display: block;
+    margin-top: 25px;
+    margin-left: 20px;
     font-size: large;
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: lightskyblue; /* Cor do texto dos links */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
@@ -132,6 +160,14 @@ section button {
     font-size: larger;
     color: #BBBBBB; /* Cor do texto */
     margin: 0 1; /* Margem acima e abaixo */
+}
+
+.detalhes {
+    margin-bottom: -20px;
+}
+
+.botao-site-oficial {
+    margin-top: 20px;
 }
 
 .mensagem-vazia {
