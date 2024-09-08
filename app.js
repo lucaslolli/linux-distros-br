@@ -31,7 +31,6 @@ function pesquisar() {
         <div class="item-resultado" id="resultado-${index}">
             <h2>${dado.titulo}</h2>
             <p class="descricao-meta">${dado.descricao}</p>
-            <button class="botao-expandir" onclick="expandirResultado(${index})">Mostrar mais</button>
             <div class="detalhes" id="detalhes-${index}" style="display: none;">
                 ${Object.entries(dado)
             .filter(([key, value]) => key !== 'titulo' && key !== 'descricao' && key !== 'link')
@@ -39,6 +38,7 @@ function pesquisar() {
             .join('')}
             </div>
             <a href="${dado.link}" target="_blank">Site oficial</a>
+            <button class="botao-expandir" id="botao-expandir-${index}" onclick="expandirResultado(${index})">Mostrar mais</button>
         </div>
     `).join('');
 }
@@ -46,9 +46,13 @@ function pesquisar() {
 // Função para expandir o resultado
 function expandirResultado(index) {
     const detalhes = document.getElementById(`detalhes-${index}`);
+    const botao = document.getElementById(`botao-expandir-${index}`);
+
     if (detalhes.style.display === 'none') {
         detalhes.style.display = 'block';
+        botao.textContent = 'Mostrar menos';  // Muda o texto do botão
     } else {
         detalhes.style.display = 'none';
+        botao.textContent = 'Mostrar mais';  // Retorna o texto do botão
     }
 }
