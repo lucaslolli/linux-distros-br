@@ -53,8 +53,9 @@ function pesquisar() {
     // Gera o HTML dos resultados
     section.innerHTML = resultados.map((dado, index) => {
         const dadosTransformados = transformarObjetoEmArray(dado);
+        const chavesExcluidas = ['Título', 'Descrição', 'Link', 'Imagem'];
         const detalhes = dadosTransformados
-            .filter(([chave, valor]) => chave !== 'Título' && chave !== 'Descrição' && chave !== 'Link')
+            .filter(([chave, valor]) => !chavesExcluidas.includes(chave))
             .map(([chave, valor]) => `<p><strong>${chave}:</strong> ${valor}</p>`)
             .join('');
 
