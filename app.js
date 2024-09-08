@@ -4,11 +4,11 @@ const descricoes = {
     descricao: "Descrição",
     link: "Link",
     imagem: "Imagem",
-    dataLancamento: "Data de Lançamento",
+    dataLancamento: "Data de lançamento",
     requisitos: "Requisitos",
     foco: "Foco",
-    gerenciadorPacotes: "Gerenciador de Pacotes",
-    ambienteDesktopPadrao: "Ambiente Desktop Padrão",
+    gerenciadorPacotes: "Gerenciador de pacotes",
+    ambienteDesktopPadrao: "Ambiente desktop padrão",
     caracteristicas: "Características",
     pros: "Prós",
     contras: "Contras"
@@ -54,7 +54,7 @@ function pesquisar() {
     section.innerHTML = resultados.map((dado, index) => {
         const dadosTransformados = transformarObjetoEmArray(dado);
         const detalhes = dadosTransformados
-            .filter(([chave, valor]) => chave !== 'Título' && chave !== 'Descrição' && chave !== 'Link')
+            .filter(([chave, valor]) => chave !== 'Título' && chave !== 'Descrição' && chave !== 'Link' && chave !== 'Imagem')
             .map(([chave, valor]) => `<p><strong>${chave}:</strong> ${valor}</p>`)
             .join('');
 

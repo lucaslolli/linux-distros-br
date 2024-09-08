@@ -9,7 +9,6 @@ let dados = [
         foco: "desktop, servidor, desenvolvimento",
         gerenciadorPacotes: "apt",
         ambienteDesktopPadrao: "GNOME",
-        caracteristicas: "Snap, Flatpak, Unity (versões anteriores), Cosmic, Ubuntu Pro",
         pros: "Grande comunidade, ampla variedade de software, fácil de usar, suporte a longo prazo",
         contras: "Pode ser considerado bloatware por alguns usuários, atualizações podem ser intrusivas"
     },
@@ -23,7 +22,6 @@ let dados = [
         foco: "desktop, desenvolvimento, servidor",
         gerenciadorPacotes: "dnf",
         ambienteDesktopPadrao: "GNOME",
-        caracteristicas: "Wayland, Btrfs, SELinux, Silverblue",
         pros: "Inovação constante, comunidade ativa, ótimo para desenvolvimento, estabilidade",
         contras: "Curva de aprendizado um pouco mais íngreme para iniciantes, atualizações frequentes podem causar instabilidades"
     },
@@ -102,7 +100,6 @@ let dados = [
         foco: "segurança, hacking",
         gerenciadorPacotes: "apt",
         ambienteDesktopPadrao: "GNOME",
-        caracteristicas: "Ampla variedade de ferramentas de segurança",
         pros: "Ampla variedade de ferramentas de segurança, comunidade ativa, documentação extensa",
         contras: "Não é recomendado para uso diário, pode ser instável para tarefas não relacionadas à segurança"
     },
@@ -116,7 +113,6 @@ let dados = [
         foco: "desktop, desempenho",
         gerenciadorPacotes: "apt",
         ambienteDesktopPadrao: "GNOME",
-        caracteristicas: "Desempenho otimizado, integração com hardware System76",
         pros: "Desempenho otimizado, integração com hardware System76, interface elegante",
         contras: "Menor variedade de software em comparação com distribuições mais populares"
     }
