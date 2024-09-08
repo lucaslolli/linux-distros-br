@@ -78,7 +78,7 @@ function pesquisar() {
 
                 <!-- Link "Site oficial" que vai ter estilo de botão -->
                 <div>
-                    <a class="botao-site-oficial" href="${dado.link}" target="_blank">Site oficial</a>
+                    <button class="botao-site-oficial" href="${dado.link}" target="_blank">Site oficial</button>
                 </div>
             </div>
         `;
