@@ -105,7 +105,7 @@ section button {
     background-color: rgba(33, 33, 33, 0.9); /* Fundo preto com transparência de 90% */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 2rem; /* Espaçamento interno */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    margin-bottom: 20px; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
@@ -115,8 +115,19 @@ section button {
     color: darkred; /* Cor do texto */
 }
 
+.botao-expandir {
+    margin-top: 0px;
+}
+
+.detalhes {
+    margin-top: 10px;
+}
+
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
+    display: block;
+    margin-top: 25px;
+    margin-left: 20px;
     font-size: large;
     text-decoration: none; /* Remove o sublinhado padrão dos links */
     color: lightskyblue; /* Cor do texto dos links */
