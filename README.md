@@ -1,14 +1,10 @@
 # Linux Distros BR
 
-Este projeto foi criado como parte da Imersão Dev com Gemini da Alura
-
-## O que esta aplicação faz?
-
 Linux Distros BR é uma base de dados em html sobre distribuições do Linux em português do Brasil.
 
 ## Como ela funciona?
 
-1. **Digite e pesquise**: Você digita o nome da distribuição Linux ou alguma palavra-chave de interesse na caixa de pesquisa.
+1. **Digite e pesquise**: Você digita o nome da distribuição Linux ou alguma palavra-chave de interesse na caixa de pesquisa. Se quiser ver todas as distribuições listadas, basta clicar em Pesquisar sem digitar nada.
 2. **Mágica acontece**: A aplicação vasculha um banco de dados (que está no arquivo `dados.js`) e exibe todas as distros que se relacionam com o que você digitou.
 3. **Resultados na tela**: Se a aplicação encontrar algo, ela mostra um card com o nome da distribuição, informações relevantes e o link da página oficial. Se não encontrar nada, ela te avisa que não teve sorte dessa vez.
 
