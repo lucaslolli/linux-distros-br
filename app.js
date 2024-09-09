@@ -67,9 +67,9 @@ function pesquisar() {
                     ${detalhes}
                 </div>
                 
-                <!-- Botão "Mostrar mais" que vai ter estilo de link -->
+                <!-- Botão "Mais detalhes" que vai ter estilo de link -->
                 <div>
-                <button class="link-estilizado" id="botao-expandir-${index}" onclick="expandirResultado(${index})">Mostrar mais</button>
+                <button class="link-estilizado" id="botao-expandir-${index}" onclick="expandirResultado(${index})">Mais detalhes</button>
                 </div>
 
                 <!-- Link "Site oficial" que vai ter estilo de botão -->
@@ -88,9 +88,9 @@ function expandirResultado(index) {
 
     if (detalhes.style.display === 'none') {
         detalhes.style.display = 'block';
-        botaoExpandir.textContent = 'Mostrar menos';
+        botaoExpandir.textContent = 'Menos detalhes';
     } else {
         detalhes.style.display = 'none';
-        botaoExpandir.textContent = 'Mostrar mais';
+        botaoExpandir.textContent = 'Mais detalhes';
     }
 }
