@@ -148,7 +148,7 @@ section button {
     margin-right: 15px;
 }
 
-/* Estilo para o botão expandir que agora será como um link */
+/* Estilo para o botão "Mais/menos detalhes" */
 .link-estilizado {
     margin-left: 14px;
     background: none;
@@ -175,7 +175,7 @@ section button {
     color: #BBB; /* Cor do texto do botão */
     font-size: 1.1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    margin-top: 20px; /* Margem superior do botão */
+    margin-top: 0px; /* Margem superior do botão */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra escura */
     width: auto; /* Garante que a largura se ajuste ao conteúdo */
     white-space: nowrap; /* Impede a quebra de linha do texto */
@@ -184,7 +184,7 @@ section button {
 .botao-container {
     display: inline-block;
     margin-left: -20px;
-    /* Permite que o contêiner ajuste seu tamanho ao conteúdo */
+    margin-top: -10px;
 }
 
 .mensagem-vazia {
