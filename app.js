@@ -31,12 +31,6 @@ function pesquisar() {
     // Mensagem padrão caso não haja resultados
     const mensagemVazia = "<p class='texto-principal'>Nada foi encontrado</p>";
 
-    // Se o campo de pesquisa estiver vazio
-    if (!campoPesquisa) {
-        section.innerHTML = mensagemVazia;
-        return;
-    }
-
     // Filtra os dados com base na pesquisa
     const resultados = dados.filter(dado =>
         Object.values(dado).some(value =>
